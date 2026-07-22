@@ -1,0 +1,21 @@
+{
+  "name": "Al Air Duct Cleaning Atlanta",
+  "short_name": "Al Air Duct",
+  "description": "Professional air duct cleaning services in Atlanta, GA. Improve indoor air quality with expert HVAC cleaning.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

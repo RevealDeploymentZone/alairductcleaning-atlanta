@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { businessInfo } from '@/data/businessInfo';
 
@@ -20,8 +21,16 @@ export default function Header() {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <nav className="container-custom">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary-600">
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/logo.svg"
+              alt={businessInfo.name}
+              width={50}
+              height={50}
+              className="h-12 w-auto"
+              priority
+            />
+            <div className="text-xl font-bold text-primary-600">
               {businessInfo.name}
             </div>
           </Link>
