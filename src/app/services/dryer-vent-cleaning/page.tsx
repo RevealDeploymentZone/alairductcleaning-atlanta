@@ -335,7 +335,7 @@ export default function DryerVentCleaningPage() {
               <a href={`tel:${businessInfo.phoneRaw}`} className="btn-primary bg-white text-red-600 hover:bg-gray-100">
                 Call {businessInfo.phone}
               </a>
-              <Link href="/contact" className="btn-secondary border-white text-white hover:bg-red-700">
+              <Link href="/contact" className="btn-primary !bg-transparent !text-white border-2 border-white hover:!bg-white hover:!text-red-600">
                 Request Free Quote
               </Link>
             </div>

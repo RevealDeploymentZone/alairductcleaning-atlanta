@@ -364,7 +364,7 @@ export default function AirDuctCleaningPage() {
               >
                 Call {businessInfo.phone}
               </a>
-              <Link href="/contact" className="btn-secondary border-white text-white hover:bg-primary-700">
+              <Link href="/contact" className="btn-primary !bg-transparent !text-white border-2 border-white hover:!bg-white hover:!text-primary-600">
                 Request Free Quote
               </Link>
             </div>

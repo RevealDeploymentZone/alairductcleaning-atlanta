@@ -1104,7 +1104,7 @@ export default async function BlogPost({ params }: PageProps) {
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                 Get Free Quote
               </Link>
-              <a href="tel:4049484544" className="btn-secondary border-white text-white hover:bg-primary-700">
+              <a href="tel:4049484544" className="btn-primary !bg-transparent !text-white border-2 border-white hover:!bg-white hover:!text-primary-600">
                 Call (404) 948-4544
               </a>
             </div>
