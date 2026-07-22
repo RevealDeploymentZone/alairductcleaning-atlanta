@@ -47,7 +47,7 @@ export default function Header() {
             ))}
             <a
               href={`tel:${businessInfo.phoneRaw}`}
-              className="btn-primary"
+              className="btn-primary !text-white"
             >
               {businessInfo.phone}
             </a>
@@ -89,7 +89,7 @@ export default function Header() {
             ))}
             <a
               href={`tel:${businessInfo.phoneRaw}`}
-              className="block mt-4 btn-primary text-center"
+              className="block mt-4 btn-primary !text-white text-center"
             >
               {businessInfo.phone}
             </a>

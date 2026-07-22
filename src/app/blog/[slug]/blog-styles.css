@@ -140,3 +140,15 @@
   border-radius: 0.5rem;
   border-left: 3px solid #0078d4;
 }
+
+.blog-content a[href^="tel:"] {
+  color: #0078d4;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #0078d4;
+}
+
+.blog-content a[href^="tel:"]:hover {
+  color: #005a9e;
+  border-bottom-color: #005a9e;
+}

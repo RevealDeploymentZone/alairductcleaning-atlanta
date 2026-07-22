@@ -153,7 +153,7 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`tel:${businessInfo.phoneRaw}`}
-                className="btn-primary"
+                className="btn-primary !text-white"
               >
                 Call {businessInfo.phone}
               </a>
