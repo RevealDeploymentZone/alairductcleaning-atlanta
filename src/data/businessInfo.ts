@@ -3,7 +3,7 @@ export const businessInfo = {
   subdomain: 'atlanta.alairductcleaning.com',
   phone: '(404) 948-4544',
   phoneRaw: '4049484544',
-  email: 'info@alairductcleaning.com',
+  email: 'info@alhomeservices.us',
   address: {
     street: '',
     city: 'Atlanta',

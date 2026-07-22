@@ -1,0 +1,100 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 VERCEL ENVIRONMENT VARIABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copy paste these into Vercel Dashboard:
+Settings > Environment Variables
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 1:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_HOST
+Value: smtp.gmail.com
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 2:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_PORT
+Value: 587
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 3:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_USER
+Value: YOUR-GMAIL@gmail.com
+       ↑ Replace with your actual Gmail address
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 4:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_PASS
+Value: YOUR-APP-PASSWORD
+       ↑ Replace with 16-character Gmail App Password (no spaces!)
+
+       Get it from: https://myaccount.google.com/apppasswords
+
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 5:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_FROM
+Value: YOUR-GMAIL@gmail.com
+       ↑ Same as SMTP_USER
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VARIABLE 6:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: SMTP_TO
+Value: info@alhomeservices.us
+       ↑ This is where form submissions will be sent ✅
+Environment: ✓ Production  ✓ Preview  ✓ Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 IMPORTANT NOTES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ⚠️  Use Gmail APP PASSWORD, NOT regular password!
+2. ⚠️  Enable 2-Factor Authentication on Gmail first
+3. ✅  All form emails will go to: info@alhomeservices.us
+4. 🔄  After adding variables, REDEPLOY your site!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 HOW TO GET APP PASSWORD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Step 1: Go to https://myaccount.google.com/apppasswords
+Step 2: Sign in with your Gmail
+Step 3: Select app: "Mail"
+Step 4: Select device: "Other" → Type "Al Air Duct Website"
+Step 5: Click "Generate"
+Step 6: Copy the 16-character password (remove spaces)
+Step 7: Use in SMTP_PASS variable
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ AFTER ADDING ALL VARIABLES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Click "Save"
+2. Go to "Deployments" tab
+3. Click "..." on latest deployment
+4. Select "Redeploy"
+5. Test the contact form!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 DONE! Emails will arrive at info@alhomeservices.us
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
