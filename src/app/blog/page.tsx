@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   },
 };
 
+// Force rebuild - Blog page active
+
 const blogPosts = [
   {
     slug: 'how-often-should-air-ducts-be-cleaned',
