@@ -96,17 +96,17 @@ export default function SimpleContactForm() {
           id="service"
           name="service"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 bg-white"
         >
-          <option value="">Select a service</option>
-          <option value="Air Duct Cleaning">Air Duct Cleaning</option>
-          <option value="Air Scrubber Installation">Air Scrubber Installation</option>
-          <option value="Dryer Vent Cleaning">Dryer Vent Cleaning</option>
-          <option value="Dryer Vent Replacement">Dryer Vent Replacement</option>
-          <option value="Air Duct Installation">Air Duct Installation</option>
-          <option value="Air Duct Removal">Air Duct Removal</option>
-          <option value="System Evaluation">System Evaluation</option>
-          <option value="Other">Other</option>
+          <option value="" className="text-gray-500">Select a service</option>
+          <option value="Air Duct Cleaning" className="text-gray-900">Air Duct Cleaning</option>
+          <option value="Air Scrubber Installation" className="text-gray-900">Air Scrubber Installation</option>
+          <option value="Dryer Vent Cleaning" className="text-gray-900">Dryer Vent Cleaning</option>
+          <option value="Dryer Vent Replacement" className="text-gray-900">Dryer Vent Replacement</option>
+          <option value="Air Duct Installation" className="text-gray-900">Air Duct Installation</option>
+          <option value="Air Duct Removal" className="text-gray-900">Air Duct Removal</option>
+          <option value="System Evaluation" className="text-gray-900">System Evaluation</option>
+          <option value="Other" className="text-gray-900">Other</option>
         </select>
       </div>
 
