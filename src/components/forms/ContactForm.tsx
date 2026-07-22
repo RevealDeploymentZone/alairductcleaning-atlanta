@@ -27,27 +27,39 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      // Web3Forms API endpoint
+      // Web3Forms API endpoint - Simple and reliable
       const formData = new FormData();
 
-      // Add Web3Forms access key - Get yours from https://web3forms.com
-      formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '6c4dd6eb-b6b8-44ae-bde9-9d8d739065c8');
+      // Web3Forms access key - Sends to info@alhomeservices.us
+      formData.append('access_key', '6c4dd6eb-b6b8-44ae-bde9-9d8d739065c8');
 
-      // Add form fields
+      // Required fields
       formData.append('name', data.name);
-      formData.append('phone', data.phone);
       formData.append('email', data.email);
-      formData.append('service', data.service);
-      formData.append('message', data.message || 'No message provided');
+      formData.append('phone', data.phone);
 
-      // Optional: Add redirect URL after successful submission
+      // Optional fields
+      formData.append('subject', `New Lead: ${data.service} - ${data.name}`);
+      formData.append('message', `
+Service Requested: ${data.service}
+
+Name: ${data.name}
+Phone: ${data.phone}
+Email: ${data.email}
+
+Message:
+${data.message || 'No message provided'}
+
+---
+Submitted from: Al Air Duct Cleaning Atlanta Website
+      `);
+
+      // Web3Forms options
+      formData.append('from_name', 'Al Air Duct Cleaning Website');
+      formData.append('replyto', data.email);
       formData.append('redirect', 'false');
 
-      // Optional: Customize subject line
-      formData.append('subject', `New Contact Form - ${data.service}`);
-
-      // Optional: Add from name
-      formData.append('from_name', 'Al Air Duct Cleaning Atlanta - Website');
+      console.log('Submitting form to Web3Forms...');
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -56,10 +68,14 @@ export default function ContactForm() {
 
       const result = await response.json();
 
+      console.log('Web3Forms response:', result);
+
       if (result.success) {
+        console.log('Form submitted successfully!');
         setSubmitStatus('success');
         reset();
       } else {
+        console.error('Form submission failed:', result);
         setSubmitStatus('error');
       }
     } catch (error) {
