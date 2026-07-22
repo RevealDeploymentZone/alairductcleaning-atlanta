@@ -31,7 +31,7 @@ export default function ContactForm() {
       const formData = new FormData();
 
       // Add Web3Forms access key - Get yours from https://web3forms.com
-      formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY');
+      formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '6c4dd6eb-b6b8-44ae-bde9-9d8d739065c8');
 
       // Add form fields
       formData.append('name', data.name);
