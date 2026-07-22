@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { businessInfo } from '@/data/businessInfo';
 
 interface BlogPost {
   title: string;
@@ -234,7 +233,7 @@ const blogPosts: BlogPosts = {
         <div class="cta-box">
           <h3>Ready to Schedule Your Air Duct Cleaning?</h3>
           <p>At Al Air Duct Cleaning Atlanta, we provide free inspections to assess your specific needs and recommend the appropriate cleaning schedule for your home. Our NADCA-certified technicians use state-of-the-art equipment to ensure thorough, professional cleaning that delivers real results.</p>
-          <p><strong>Contact us today at <a href="tel:${businessInfo.phoneRaw}">${businessInfo.phone}</a> to schedule your free consultation.</strong></p>
+          <p><strong>Contact us today at <a href="tel:4049484544">(404) 948-4544</a> to schedule your free consultation.</strong></p>
         </div>
 
         <h2>Related Services</h2>
@@ -483,8 +482,8 @@ export default async function BlogPost({ params }: PageProps) {
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                 Get Free Quote
               </Link>
-              <a href={`tel:${businessInfo.phoneRaw}`} className="btn-secondary border-white text-white hover:bg-primary-700">
-                Call {businessInfo.phone}
+              <a href="tel:4049484544" className="btn-secondary border-white text-white hover:bg-primary-700">
+                Call (404) 948-4544
               </a>
             </div>
           </div>
