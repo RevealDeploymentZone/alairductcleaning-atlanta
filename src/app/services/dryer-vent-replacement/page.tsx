@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ContactForm from '@/components/forms/ContactForm';
+import SimpleContactForm from '@/components/forms/SimpleContactForm';
 import { businessInfo } from '@/data/businessInfo';
 import type { Metadata } from 'next';
 
@@ -262,7 +262,7 @@ export default function DryerVentReplacementPage() {
                 <p className="text-gray-600 mb-6">
                   Need dryer vent replacement? Contact us for a free inspection and quote.
                 </p>
-                <ContactForm />
+                <SimpleContactForm />
 
                 <div className="mt-8 pt-8 border-t">
                   <h4 className="font-bold mb-4">Related Services</h4>

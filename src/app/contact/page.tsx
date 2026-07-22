@@ -1,4 +1,4 @@
-import ContactForm from '@/components/forms/ContactForm';
+import SimpleContactForm from '@/components/forms/SimpleContactForm';
 import { businessInfo } from '@/data/businessInfo';
 import type { Metadata } from 'next';
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
               <p className="text-lg text-gray-600 mb-8">
                 Fill out the form and we will contact you within 24 hours. All fields marked with * are required.
               </p>
-              <ContactForm />
+              <SimpleContactForm />
             </div>
 
             <div>

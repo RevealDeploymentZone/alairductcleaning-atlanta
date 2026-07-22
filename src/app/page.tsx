@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ContactForm from '@/components/forms/ContactForm';
+import SimpleContactForm from '@/components/forms/SimpleContactForm';
 import { businessInfo } from '@/data/businessInfo';
 import type { Metadata } from 'next';
 
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-2xl p-6 lg:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Get Your Free Quote Today</h2>
               <p className="text-gray-600 mb-6">Fill out the form and we'll contact you within 24 hours.</p>
-              <ContactForm />
+              <SimpleContactForm />
             </div>
           </div>
         </div>

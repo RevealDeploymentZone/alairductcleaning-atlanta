@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import ContactForm from '@/components/forms/ContactForm';
+import SimpleContactForm from '@/components/forms/SimpleContactForm';
 import { businessInfo } from '@/data/businessInfo';
 import type { Metadata } from 'next';
 
@@ -284,7 +284,7 @@ export default function AirDuctCleaningPage() {
                 <p className="text-gray-600 mb-6">
                   Ready to breathe cleaner air? Contact us today for a free consultation and quote.
                 </p>
-                <ContactForm />
+                <SimpleContactForm />
 
                 <div className="mt-8 pt-8 border-t">
                   <h4 className="font-bold mb-4">Quick Links</h4>
