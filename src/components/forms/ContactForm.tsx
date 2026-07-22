@@ -27,21 +27,43 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('/api/contact', {
+      // Web3Forms API endpoint
+      const formData = new FormData();
+
+      // Add Web3Forms access key - Get yours from https://web3forms.com
+      formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY');
+
+      // Add form fields
+      formData.append('name', data.name);
+      formData.append('phone', data.phone);
+      formData.append('email', data.email);
+      formData.append('service', data.service);
+      formData.append('message', data.message || 'No message provided');
+
+      // Optional: Add redirect URL after successful submission
+      formData.append('redirect', 'false');
+
+      // Optional: Customize subject line
+      formData.append('subject', `New Contact Form - ${data.service}`);
+
+      // Optional: Add from name
+      formData.append('from_name', 'Al Air Duct Cleaning Atlanta - Website');
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.success) {
         setSubmitStatus('success');
         reset();
       } else {
         setSubmitStatus('error');
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
