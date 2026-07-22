@@ -1,0 +1,142 @@
+.blog-content {
+  line-height: 1.8;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+  font-size: 1.125rem;
+}
+
+.blog-content .lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2d3748;
+  margin-bottom: 2rem;
+}
+
+.blog-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #0078d4;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.blog-content ul li {
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.blog-content ul li strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.blog-content .external-link {
+  color: #0078d4;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.blog-content .external-link:hover {
+  color: #005a9e;
+}
+
+.blog-content .internal-link {
+  color: #0078d4;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.blog-content .internal-link:hover {
+  color: #005a9e;
+}
+
+.blog-content .info-box {
+  background: #e6f7ff;
+  border-left: 4px solid #0078d4;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.blog-content .info-box h3 {
+  margin-top: 0;
+  color: #0078d4;
+  font-size: 1.25rem;
+}
+
+.blog-content .info-box p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.blog-content .warning-box {
+  background: #fff7e6;
+  border-left: 4px solid #ffa940;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.blog-content .warning-box h3 {
+  margin-top: 0;
+  color: #d46b08;
+  font-size: 1.25rem;
+}
+
+.blog-content .cta-box {
+  background: #f0f9ff;
+  border: 2px solid #0078d4;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.blog-content .cta-box h3 {
+  margin-top: 0;
+  color: #0078d4;
+}
+
+.blog-content .cta-box a {
+  color: #0078d4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-content .cta-box a:hover {
+  text-decoration: underline;
+}
+
+.blog-content .related-services {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.blog-content .related-services li {
+  background: #f7fafc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid #0078d4;
+}
